@@ -22,7 +22,7 @@ public class UrlDo implements Serializable {
 	@Column(name = "SHORT_URL", unique = true, nullable = false)
 	private String shortUrl;
 
-	@Column(name = "LONG_URL", unique = true, nullable = false)
+	@Column(name = "LONG_URL", unique = true, nullable = false, columnDefinition = "NVARCHAR(MAX)")
 	private String longUrl;
 
 	@Column(name = "CREATE_TS", unique = true, nullable = false)
